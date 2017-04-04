@@ -13,13 +13,13 @@
   </thead>
 
   <tbody>
-    <% @groups.each do |g| %>
+    <% @groups.each do |group| %>
     <tr>
       <td>#</td>
-      <td><%= g.title %></td>
-      <td><%= render_group_description(g) %></td>
-      <td><%= g.posts.count %></td>
-      <td><%= g.updated_at %></td>
+      <td><%= group.title %></td>
+      <td><%= render_group_description(group) %></td>
+      <td><%= group.posts.count %></td>
+      <td><%= group.updated_at %></td>
     </tr>
     <% end %>
   </tbody>
